@@ -3,29 +3,29 @@ using System.Runtime.InteropServices;
 
 namespace UnsafeTest
 {
-    public static class Program
-    {
-        public static void Main(string[] args)
-        {
-            DoublyLinkedList list = new();
-            list.AddFirst(new Person { Name = "Person 1", Age = 1 });
-            Console.WriteLine(list); 
-            list.AddFirst(new Person { Name = "Person 2", Age = 2 });
-            Console.WriteLine(list); 
-            list.AddFirst(new Person { Name = "Person 3", Age = 3 });
-            Console.WriteLine(list); 
-            list.AddLast(new Person { Name = "Person 4", Age = 4 });
-            Console.WriteLine(list); 
-            list.AddLast(new Person { Name = "Person 5", Age = 5 });
-            Console.WriteLine(list); 
-            list.Insert(3, new Person { Name = "Person 6", Age = 6 });
-            Console.WriteLine(list);
-            list.RemoveFirst();
-            Console.WriteLine(list);
-            list.RemoveLast();
-            Console.WriteLine(list);
-        }
-    }
+    //public static class Program
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        DoublyLinkedList list = new();
+    //        list.AddFirst(new Person { Name = "Person 1", Age = 1 });
+    //        Console.WriteLine(list); 
+    //        list.AddFirst(new Person { Name = "Person 2", Age = 2 });
+    //        Console.WriteLine(list); 
+    //        list.AddFirst(new Person { Name = "Person 3", Age = 3 });
+    //        Console.WriteLine(list); 
+    //        list.AddLast(new Person { Name = "Person 4", Age = 4 });
+    //        Console.WriteLine(list); 
+    //        list.AddLast(new Person { Name = "Person 5", Age = 5 });
+    //        Console.WriteLine(list); 
+    //        list.Insert(3, new Person { Name = "Person 6", Age = 6 });
+    //        Console.WriteLine(list);
+    //        list.RemoveFirst();
+    //        Console.WriteLine(list);
+    //        list.RemoveLast();
+    //        Console.WriteLine(list);
+    //    }
+    //}
 
     public struct Person
     {
